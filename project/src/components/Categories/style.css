@@ -1,0 +1,13 @@
+.categories{
+padding: 8px 46.5px;
+background-color: var(--color-black);
+border-radius: 6px;
+color: var(--color-white);
+display: flex;
+align-items: center;
+gap: 4px;
+cursor: pointer;
+}
+.categories__text{
+    font-size: 14px;
+}

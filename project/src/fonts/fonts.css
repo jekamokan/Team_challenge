@@ -1,0 +1,31 @@
+
+@font-face {
+    font-family: 'OverusedGrotesk';
+    src: 
+        url('../fonts/otf/OverusedGrotesk-Roman.otf'), format('otf')
+        url('../fonts/ttf/OverusedGrotesk-Roman.ttf') format('ttf'),
+        url('../fonts/woff/OverusedGrotesk-Roman.woff') format('woff'),
+        url('../fonts/woff2/OverusedGrotesk-Roman.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OverusedGrotesk';
+    src: 
+        url('../fonts/otf/OverusedGrotesk-Medium.otf'), format('otf')
+        url('../fonts/ttf/OverusedGrotesk-Medium.ttf') format('ttf'),
+        url('../fonts/woff/OverusedGrotesk-Medium.woff') format('woff'),
+        url('../fonts/woff2/OverusedGrotesk-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OverusedGrotesk';
+    src: 
+        url('../fonts/otf/OverusedGrotesk-Bold.otf'), format('otf')
+        url('../fonts/ttf/OverusedGrotesk-Bold.ttf') format('ttf'),
+        url('../fonts/woff/OverusedGrotesk-Bold.woff') format('woff'),
+        url('../fonts/woff2/OverusedGrotesk-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}

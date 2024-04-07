@@ -1,0 +1,41 @@
+.sort{
+    margin-left: 100px;
+    margin-top: 50px;
+    position: relative;
+    &__value{
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4px;
+        border-radius: 6px;
+        border: 1px solid var(--color-border);
+        min-width: 148px;
+        padding: 4px 4px 4px 12px;
+        cursor: pointer;
+
+    }
+    &__text{
+        color: #9AA6AC;
+        font-size: 14px;
+    }
+    &__text-value{
+        font-size: 14px;
+        color: var(--color-black-text);
+    }
+    &__variables{
+        background-color: var(--color-white);
+        position: absolute;
+        top: 0;
+        width: 200px;
+    }
+    &__variables-title{
+        margin-bottom: 15px;
+        font-weight: 700;
+        font-size: 22px;
+    }
+    &__variables-list{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}

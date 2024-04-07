@@ -1,0 +1,20 @@
+@import './fonts/fonts.css';
+@import './roots/root.css';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style-type: none;
+}
+body{
+  font-family: var(--ff-overusedGrotesk);
+  
+}
+
+

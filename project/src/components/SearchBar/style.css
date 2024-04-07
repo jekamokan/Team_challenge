@@ -1,0 +1,16 @@
+.searchbar{
+    width: 718px;
+    padding: 8px 16px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    position: relative;
+    
+}
+
+.searchbar::placeholder{
+    font-size: 14px;
+    color: var(--color-black-text);
+    background: url('../../images/icons/search.svg') no-repeat;
+    background-size: 24px;
+    background-position: right;
+}
