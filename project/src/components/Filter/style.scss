@@ -1,0 +1,76 @@
+.filter{
+    margin-left: 100px;
+    padding: 24px;
+    border-radius: 4px;
+    position: relative;
+    &__value{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 82px;
+        padding: 4px 4px 4px 14px;
+        border-radius: 6px;
+        border: 1px solid var(--color-border);
+        cursor: pointer;
+    }
+    &__text{
+        color: var(--color-black-text);
+        font-size: 14px;
+    }
+    &__variables{
+        background-color: var(--color-white);
+        position: absolute;
+        top: 24px;
+        width: 505px;
+        padding: 24px;
+        border-radius: 4px;
+    }
+    &__variables-top{
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        margin-bottom: 32px;
+    }
+    &__variables-title{
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--color-filter-title);
+    }
+    &__variables-reset{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    &__variables-clear{
+        background-color: transparent;
+        cursor: pointer;
+    }
+    &__variables-close{
+        cursor: pointer;
+    }
+    &__applied{
+        margin-bottom: 16px;
+    }
+    &__applied-text{
+        margin-bottom: 16px;
+        color: var(--color-filter-title);
+    }
+    &__applied-list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+    }
+    &__applied-item{
+        background-color: var(--color-black-text);
+        border-radius: 6px;
+        color: var(--color-white);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px;
+        & img{
+            cursor: pointer;
+        }
+    }
+
+}

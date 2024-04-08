@@ -1,0 +1,75 @@
+.filter {
+  margin-left: 100px;
+  padding: 24px;
+  border-radius: 4px;
+  position: relative;
+}
+.filter__value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 82px;
+  padding: 4px 4px 4px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+}
+.filter__text {
+  color: var(--color-black-text);
+  font-size: 14px;
+}
+.filter__variables {
+  background-color: var(--color-white);
+  position: absolute;
+  top: 24px;
+  width: 505px;
+  padding: 24px;
+  border-radius: 4px;
+}
+.filter__variables-top {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.filter__variables-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-filter-title);
+}
+.filter__variables-reset {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.filter__variables-clear {
+  background-color: transparent;
+  cursor: pointer;
+}
+.filter__variables-close {
+  cursor: pointer;
+}
+.filter__applied {
+  margin-bottom: 16px;
+}
+.filter__applied-text {
+  margin-bottom: 16px;
+  color: var(--color-filter-title);
+}
+.filter__applied-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+.filter__applied-item {
+  background-color: var(--color-black-text);
+  border-radius: 6px;
+  color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+.filter__applied-item img {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

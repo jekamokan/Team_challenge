@@ -12,6 +12,9 @@ a{
 ul{
   list-style-type: none;
 }
+button{
+  border: none;
+}
 body{
   font-family: var(--ff-overusedGrotesk);
   

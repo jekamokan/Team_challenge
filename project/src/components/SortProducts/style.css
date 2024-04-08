@@ -28,11 +28,6 @@
   top: 0;
   width: 200px;
 }
-.sort__variables-title {
-  margin-bottom: 15px;
-  font-weight: 700;
-  font-size: 22px;
-}
 .sort__variables-list {
   display: flex;
   flex-direction: column;

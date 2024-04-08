@@ -28,7 +28,7 @@ const SortProducts = () => {
             </div>
             {visibility? (
                 <div className="sort__variables">
-                <p className="sort__variables-title" onClick={sorterVisibility}>Sort by</p>
+                {/* <p className="sort__variables-title" onClick={sorterVisibility}>Sort by</p> */}
                 <div className="sort__variables-list">
                     {sortValues.map((value, id) => (
                         <CustomCheckbox
