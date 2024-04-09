@@ -10,14 +10,15 @@ import './style.css'
 const Filter = () => {
     const [appliedList, setAppliedList] = useState([]);
     const [isVisible, setIsVisible] = useState(false)
-    console.log(isVisible)
+    console.log(appliedList)
 
     const handleRemoveValue = (item) => {
         const updatedList = appliedList.filter(value => value != item)
         setAppliedList(updatedList)
     }
 
-    const closeVariables = () => setIsVisible(!isVisible)
+    const closeVariables = () => setIsVisible(!isVisible);
+    const resetAppliedList = () => setAppliedList([])
 
     return (
         <div className="filter">
@@ -30,7 +31,7 @@ const Filter = () => {
                     <div className="filter__variables-top">
                         <p className="filter__variables-title">Filters</p>
                         <div className="filter__variables-reset">
-                            <button className="filter__variables-clear">Clear all</button>
+                            <button className="filter__variables-clear" onClick={resetAppliedList}>Clear all</button>
                             <img src={close} alt="" className="filter__variables-close" onClick={closeVariables}/>
                         </div>
                     </div>
@@ -39,7 +40,7 @@ const Filter = () => {
                             <p className='filter__applied-text'>Applied Filters</p>
                             <ul className='filter__applied-list'>
                                 {appliedList.map(item => (
-                                    <li className='filter__applied-item'>
+                                    <li className='filter__applied-item' key={item}>
                                         {item}
                                         <img 
                                         src={closeWhite} 

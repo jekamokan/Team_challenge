@@ -7,6 +7,28 @@
 .css-1j37bbt-MuiPaper-root-MuiAccordion-root::before{
     height: 0 !important;
 }
+
+.css-1o7rhx3-MuiButtonBase-root-MuiAccordionSummary-root{
+    min-height: auto !important;
+}
+.css-yyh5oa-MuiPaper-root-MuiAccordion-root.Mui-expanded,
+.css-1j37bbt-MuiPaper-root-MuiAccordion-root.Mui-expanded,
+.css-u26vfm-MuiPaper-root-MuiAccordion-root.Mui-expanded:first-of-type{
+    margin: 0 !important;
+}
+
+.MuiAccordionSummary-content{
+    color: var(--color-filter-title);
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 !important;
+}
+.accordion{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 32px;
+}
 .accordion-list{
     display: flex;
     flex-wrap: wrap;
@@ -39,5 +61,20 @@
     color: var(--color-white);
     font-size: 14px;
     padding: 8px;
+    cursor: pointer;
+}
+.accordion-options{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.accordion-btn{
+    width: 100%;
+    padding: 16px;
+    background-color: var(--color-black-text);
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 6px;
     cursor: pointer;
 }

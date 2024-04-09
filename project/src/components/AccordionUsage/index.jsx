@@ -1,43 +1,46 @@
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import './style.css'
 import { useState } from 'react';
 import Arrow from '../Arrow';
+import CustomCheckbox from '../CustomCheckbox'
+import './style.css'
+import { bestForData, discountData, sizeValue } from '../../data';
 
-const sizeValue = [];
-for (let i = 4.5; i <= 14; i += 0.5) {
-    sizeValue.push(i);
-}
+
+
 
 const AccordionUsage = (props) => {
-    const {setAppliedList} = props
+    const { setAppliedList } = props
     const [activeSize, setActiveSize] = useState(null);// state for size
 
-    const handleSize = (value) => {
+    const handleFilters = (value) => {
         setActiveSize(value === activeSize ? null : value)
         setAppliedList(prevList => prevList.includes(value) ? prevList : [...prevList, value]);
     };//function for size
+    // const handleDiscount = (value) => {
+    //     setAppliedList(prevList => prevList.includes(value) ? prevList : [...prevList, value])
+    // };//function for discount
 
     return (
-        <div>
+        <>
+        <div className='accordion'>
             <Accordion sx={{ boxShadow: 'none' }}>
                 <AccordionSummary
-                    expandIcon={<Arrow/>}
+                    expandIcon={<Arrow />}
                     aria-controls="panel1-content"
                     id="panel1-header"
                     sx={{ padding: 0 }}
                 >
                     Size
                 </AccordionSummary>
-                <AccordionDetails sx={{padding: 0}}>
+                <AccordionDetails sx={{ padding: 0, marginTop: '16px' }}>
                     <ul className='accordion-list'>
                         {sizeValue.map(value => (
                             <li
                                 key={value}
                                 className={value === activeSize ? 'accordion-itemactive' : 'accordion-item'}
-                                onClick={() => handleSize(value)}
+                                onClick={() => handleFilters(value)}
                             >
                                 {value}
                             </li>
@@ -62,12 +65,19 @@ const AccordionUsage = (props) => {
                 >
                     Discount
                 </AccordionSummary>
-                <AccordionDetails>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                    malesuada lacus ex, sit amet blandit leo lobortis eget.
+                <AccordionDetails sx={{ padding: 0, marginTop: '16px' }}>
+                    <div className='accordion-options'>
+                        {discountData.map(el => (
+                            <CustomCheckbox
+                                children={el.name}
+                                key={el.name}
+                                setValue={value => handleFilters(value)}
+                            />
+                        ))}
+                    </div>
                 </AccordionDetails>
             </Accordion>
-            <Accordion sx={{ border: 'none', boxShadow: 'none' }}>
+            <Accordion sx={{ border: 'none', boxShadow: 'none', }}>
                 <AccordionSummary
                     expandIcon={<Arrow />}
                     aria-controls="panel3-content"
@@ -76,9 +86,16 @@ const AccordionUsage = (props) => {
                 >
                     Best For
                 </AccordionSummary>
-                <AccordionDetails>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                    malesuada lacus ex, sit amet blandit leo lobortis eget.
+                <AccordionDetails sx={{ padding: 0, marginTop: '16px' }}>
+                    <div className='accordion-options'>
+                        {bestForData.map(el => (
+                            <CustomCheckbox
+                                children={el.name}
+                                key={el.name}
+                                setValue={value => handleFilters(value)}
+                            />
+                        ))}
+                    </div>
                 </AccordionDetails>
             </Accordion>
             <Accordion sx={{ border: 'none', boxShadow: 'none' }}>
@@ -90,7 +107,7 @@ const AccordionUsage = (props) => {
                 >
                     Colour
                 </AccordionSummary>
-                <AccordionDetails>
+                <AccordionDetails sx={{ padding: 0, marginTop: '16px' }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                     malesuada lacus ex, sit amet blandit leo lobortis eget.
                 </AccordionDetails>
@@ -104,7 +121,7 @@ const AccordionUsage = (props) => {
                 >
                     Collection
                 </AccordionSummary>
-                <AccordionDetails>
+                <AccordionDetails sx={{ padding: 0, marginTop: '16px' }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                     malesuada lacus ex, sit amet blandit leo lobortis eget.
                 </AccordionDetails>
@@ -118,7 +135,7 @@ const AccordionUsage = (props) => {
                 >
                     Features
                 </AccordionSummary>
-                <AccordionDetails>
+                <AccordionDetails sx={{ padding: 0, marginTop: '16px' }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                     malesuada lacus ex, sit amet blandit leo lobortis eget.
                 </AccordionDetails>
@@ -132,7 +149,7 @@ const AccordionUsage = (props) => {
                 >
                     Model
                 </AccordionSummary>
-                <AccordionDetails>
+                <AccordionDetails sx={{ padding: 0, marginTop: '16px' }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                     malesuada lacus ex, sit amet blandit leo lobortis eget.
                 </AccordionDetails>
@@ -146,7 +163,7 @@ const AccordionUsage = (props) => {
                 >
                     Price
                 </AccordionSummary>
-                <AccordionDetails>
+                <AccordionDetails sx={{ padding: 0, marginTop: '16px' }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                     malesuada lacus ex, sit amet blandit leo lobortis eget.
                 </AccordionDetails>
@@ -160,12 +177,14 @@ const AccordionUsage = (props) => {
                 >
                     Brand
                 </AccordionSummary>
-                <AccordionDetails>
+                <AccordionDetails sx={{ padding: 0, marginTop: '16px' }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                     malesuada lacus ex, sit amet blandit leo lobortis eget.
                 </AccordionDetails>
             </Accordion>
         </div>
+        <button className='accordion-btn'>Apply</button>
+        </>
     )
 }
 

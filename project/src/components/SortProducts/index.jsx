@@ -2,15 +2,9 @@ import React, { useState } from 'react';
 import arrowSort from '../../images/icons/arrowSort.svg'
 import CustomCheckbox from '../CustomCheckbox';
 import './style.css'
+import { sortValues } from '../../data';
 
-const sortValues = [
-    { name: 'Featured', id: 0 },
-    { name: 'Newest', id: 1 },
-    { name: 'Price (High - Low)', id: 2 },
-    { name: 'Price (Low - High)', id: 3 },
-    { name: 'Top Sellers', id: 4 },
-    { name: 'Discount', id: 5 },
-]
+
 
 const SortProducts = () => {
 

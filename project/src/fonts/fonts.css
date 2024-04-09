@@ -22,6 +22,16 @@
 @font-face {
     font-family: 'OverusedGrotesk';
     src: 
+        url('../fonts/otf/OverusedGrotesk-SemiBold.otf'), format('otf')
+        url('../fonts/ttf/OverusedGrotesk-SemiBold.ttf') format('ttf'),
+        url('../fonts/woff/OverusedGrotesk-SemiBold.woff') format('woff'),
+        url('../fonts/woff2/OverusedGrotesk-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OverusedGrotesk';
+    src: 
         url('../fonts/otf/OverusedGrotesk-Bold.otf'), format('otf')
         url('../fonts/ttf/OverusedGrotesk-Bold.ttf') format('ttf'),
         url('../fonts/woff/OverusedGrotesk-Bold.woff') format('woff'),
