@@ -1,0 +1,42 @@
+.about{
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    &__store,
+    &__faq{
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+    &__store-title{
+        font-weight: 600;
+        font-size: 32px;
+    }
+    &__store-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 64px;
+    }
+    &__img-block{
+        width: 612px;
+        height: 370px;
+    }
+    &__img-faq{
+        width: 579px;
+        height: 370px;
+    }
+    &__img{
+        object-fit: cover;
+    }
+    &__store-texts{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__store-text{
+        font-size: 20px;
+    }
+    
+}

@@ -1,0 +1,33 @@
+.css-yw020d-MuiAccordionSummary-expandIconWrapper.Mui-expanded{
+    transform: rotate(-90deg) !important;
+}
+.css-1086bdv-MuiPaper-root-MuiAccordion-root{
+    box-shadow: none !important;
+    border-top: 2px solid #9D9D9D;
+    padding: 24px 0;
+}
+.css-1086bdv-MuiPaper-root-MuiAccordion-root::before{
+    height: 0 !important;
+
+}
+.css-1086bdv-MuiPaper-root-MuiAccordion-root:first-of-type,
+.css-1086bdv-MuiPaper-root-MuiAccordion-root:last-of-type{
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+.css-1086bdv-MuiPaper-root-MuiAccordion-root:last-of-type {
+    border-bottom: 2px solid #9D9D9D;
+}
+.css-1ozxwx2-MuiButtonBase-root-MuiAccordionSummary-root{
+    padding: 0 !important;
+    min-height: 0 !important;
+}
+
+.css-eqpfi5-MuiAccordionSummary-content{
+    color: #636363;
+}
+.css-eqpfi5-MuiAccordionSummary-content{
+    margin: 0 !important;
+}

@@ -1,0 +1,41 @@
+.about {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.about__store, .about__faq {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.about__store-title {
+  font-weight: 600;
+  font-size: 32px;
+}
+.about__store-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 64px;
+}
+.about__img-block {
+  width: 612px;
+  height: 370px;
+}
+.about__img-faq {
+  width: 579px;
+  height: 370px;
+}
+.about__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about__store-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about__store-text {
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */
