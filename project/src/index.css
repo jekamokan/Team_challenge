@@ -14,6 +14,8 @@ ul{
 }
 button{
   border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 body{
   font-family: var(--ff-overusedGrotesk);
