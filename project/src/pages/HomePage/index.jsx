@@ -1,6 +1,7 @@
 import MainSlider from "../../components/MainSlider"
 import Container from '../../components/Container'
 import './style.css'
+import BestSellers from "../../components/BestSellers"
 
 
 const HomePage = () => {
@@ -10,7 +11,7 @@ const HomePage = () => {
         <MainSlider />
       </div>
       <Container>
-
+        <BestSellers/>
       </Container>
     </div>
   )
