@@ -46,7 +46,7 @@ export const bestSellersData = [
     {
         name: 'Nike Vomero 3',
         price: 503,
-        image: '../images/icons/boots.png',
+        image: boots,
         options: ['Unisex', 'Sport Shoes', 'New Arrival'],
         colors: '4 colors, complete set',
         feedback: 73

@@ -1,0 +1,75 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 294px;
+  cursor: pointer;
+}
+.card__top {
+  position: relative;
+  height: 294px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card__options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px;
+  position: relative;
+  z-index: 1;
+}
+.card__list {
+  display: flex;
+  gap: 4px;
+}
+.card__item {
+  background-color: var(--color-white);
+  border-radius: 9px;
+  font-size: 10px;
+  line-height: 22px;
+  color: #767677;
+  padding: 4px 8px;
+}
+.card__img {
+  position: absolute;
+  top: 0;
+}
+.card__price {
+  position: relative;
+  z-index: 1;
+  background-color: #000000;
+  padding: 8px;
+  color: var(--color-white);
+  font-size: 18px;
+  width: 89px;
+  font-weight: 600;
+  text-align: center;
+}
+.card__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.card__feedback {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.card__bottom-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__name {
+  font-weight: 500;
+  font-size: 24px;
+  color: #000000;
+}
+.card__colors {
+  color: #767677;
+}
+.card__heart, .card__cart {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
