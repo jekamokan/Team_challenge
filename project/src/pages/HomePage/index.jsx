@@ -4,6 +4,7 @@ import './style.css'
 import BestSellers from "../../components/BestSellers"
 import ForBoth from "../../components/ForBoth"
 import Sale from "../../components/Sale"
+import Form from "../../components/Form"
 
 
 const HomePage = () => {
@@ -16,6 +17,7 @@ const HomePage = () => {
         <BestSellers/>
         <ForBoth/>
         <Sale/>
+        <Form/>
       </Container>
     </div>
   )
