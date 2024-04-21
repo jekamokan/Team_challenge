@@ -18,6 +18,14 @@ const Footer = () => {
                     <li>5</li>
                     <li>6</li>
                 </ul>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                </ul>
             </div>
             <div className='footer__social'>
                 <p className="footer__social-text">Follow us</p>
