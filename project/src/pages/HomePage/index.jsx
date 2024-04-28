@@ -7,7 +7,10 @@ import Sale from "../../components/Sale"
 import Form from "../../components/Form"
 
 
+
 const HomePage = () => {
+
+
   return (
     <div className="homepage">
       <div className="homepage__slider">
