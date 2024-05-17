@@ -6,24 +6,23 @@ import './style.css'
 const ForBoth = () => {
     return (
         <div className='forboth'>
-            <div className="forboth__women" >
-                <div className="forboth__wrapper">
-                    <Link className='forboth__link'>
-                        For women
-                        <img src={AccordionFaq} alt="arrow" />
-                    </Link>
-
-                </div>
-            </div>
-            <div className="forboth__man" >
+            <div className="forboth__man">
                 <div className="forboth__wrapper">
                     <Link className='forboth__link'>
                         For man
                         <img src={AccordionFaq} alt="arrow" />
                     </Link>
-
                 </div>
             </div>
+            <div className="forboth__woman">
+                <div className="forboth__wrapper">
+                    <Link className='forboth__link'>
+                        For women
+                        <img src={AccordionFaq} alt="arrow" />
+                    </Link>
+                </div>
+            </div>
+
         </div>
     )
 }

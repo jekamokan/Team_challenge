@@ -3,7 +3,7 @@ import {bestSellersData} from '../../data'
 import Card from '../Card'
 import './style.css'
 
-const BestSellers = () => {
+const WeekPromotion = () => {
     const cardsData = bestSellersData.slice(0, 4);
 
     const cards = cardsData.map((cardData, index) => (
@@ -19,16 +19,16 @@ const BestSellers = () => {
     ));
 
     return (
-        <div className='bestsellers'>
-            <div className="bestsellers__head">
-                <h2 className="bestsellers__title">Best Sellers</h2>
-                <Link className='bestsellers__link'>View all</Link>
+        <div className='promotion'>
+            <div className="promotion__head">
+                <h2 className="promotion__title">Week promotion</h2>
+                <Link className='promotion__link'>View all</Link>
             </div>
-            <div className="bestsellers__body">
+            <div className="promotion__body">
                 {cards}
             </div>
         </div>
     )
 }
 
-export default BestSellers
+export default WeekPromotion

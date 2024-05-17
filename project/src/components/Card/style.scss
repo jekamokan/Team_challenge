@@ -4,6 +4,7 @@
     gap: 24px;
     width: 294px;
     cursor: pointer;
+    border-radius: 14px;
     &__top{
         position: relative;
         height: 294px;
@@ -22,6 +23,7 @@
     &__list{
         display: flex;
         gap: 4px;
+
     }
     &__item{
         background-color: var(--color-white);
@@ -30,21 +32,37 @@
         line-height: 22px;
         color: #767677;
         padding: 4px 8px;
+        &:first-child{
+            color: #ED7044;
+        }
     }
+
     &__img{
         position: absolute;
         top: 0;
+        border-radius: 14px;
     }
     &__price{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
         position: relative;
         z-index: 1;
-        background-color: #000000;
+        background: linear-gradient(0.25turn, #FF1F1F,  #142031);
         padding: 8px;
         color: var(--color-white);
         font-size: 18px;
-        width: 89px;
+        width: 138px;
         font-weight: 600;
-        text-align: center;
+        // text-align: center;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+    }
+    &__price-old{
+        font-size: 12px;
+        text-decoration: line-through;
+        line-height: 24px;
     }
     &__bottom{
         display: flex;

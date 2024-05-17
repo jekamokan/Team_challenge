@@ -1,0 +1,25 @@
+.collection {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.collection__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.collection__title {
+  font-weight: 700;
+  color: #000;
+}
+.collection__body {
+  display: flex;
+  justify-content: space-between;
+}
+.collection__link {
+  color: var(--color-black-text);
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: -0.006em;
+}/*# sourceMappingURL=style.css.map */

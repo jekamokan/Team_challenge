@@ -3,11 +3,14 @@
     gap: 24px;
     justify-content: space-between;
     margin-bottom: 100px;
-    &__women,
+    &__woman,
     &__man{
         height: 384px;
         width: 612px;
-        background-color: #D9D9D9;
+        background: url('../../images/icons/man.jpg');
+    }
+    &__woman{
+        background: url('../../images/icons/woman.jpg');
     }
     &__wrapper{
         width: 100%;

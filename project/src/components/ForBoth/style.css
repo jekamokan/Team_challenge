@@ -4,10 +4,13 @@
   justify-content: space-between;
   margin-bottom: 100px;
 }
-.forboth__women, .forboth__man {
+.forboth__woman, .forboth__man {
   height: 384px;
   width: 612px;
-  background-color: #D9D9D9;
+  background: url("../../images/icons/man.jpg");
+}
+.forboth__woman {
+  background: url("../../images/icons/woman.jpg");
 }
 .forboth__wrapper {
   width: 100%;

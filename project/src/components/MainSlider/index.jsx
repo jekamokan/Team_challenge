@@ -18,6 +18,20 @@ const MainSlider = () => {
             pagination={{ clickable: true }}
         >
             <SwiperSlide>
+                <div className='slide__body slide__first'>
+                    <h1 className='slide__body-title'>Online Store</h1>
+                    <p className='slide__body-text'>Unveil a world of sophistication with our curated selection from top designers worldwide. Elevate your wardrobe effortlessly. Start shopping now!</p>
+                    <button className='slide__body-button'>View all</button>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className='slide__body slide__second'>
+                    <h1 className='slide__body-title'>Online Store</h1>
+                    <p className='slide__body-text'>Unveil a world of sophistication with our curated selection from top designers worldwide. Elevate your wardrobe effortlessly. Start shopping now!</p>
+                    <button className='slide__body-button'>View all</button>
+                </div>
+            </SwiperSlide>
+            {/* <SwiperSlide>
                 <div className='slide__first'>
                     <h1 className='slide__first-title'>Online Store</h1>
                     <p className='slide__first-text'>Unveil a world of sophistication with our curated selection from top designers worldwide. Elevate your wardrobe effortlessly. Start shopping now!</p>
@@ -30,21 +44,7 @@ const MainSlider = () => {
                     <p className='slide__first-text'>Unveil a world of sophistication with our curated selection from top designers worldwide. Elevate your wardrobe effortlessly. Start shopping now!</p>
                     <button className='slide__first-button'>View all</button>
                 </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className='slide__first'>
-                    <h1 className='slide__first-title'>Online Store</h1>
-                    <p className='slide__first-text'>Unveil a world of sophistication with our curated selection from top designers worldwide. Elevate your wardrobe effortlessly. Start shopping now!</p>
-                    <button className='slide__first-button'>View all</button>
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className='slide__first'>
-                    <h1 className='slide__first-title'>Online Store</h1>
-                    <p className='slide__first-text'>Unveil a world of sophistication with our curated selection from top designers worldwide. Elevate your wardrobe effortlessly. Start shopping now!</p>
-                    <button className='slide__first-button'>View all</button>
-                </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
         </Swiper>
     );
 };

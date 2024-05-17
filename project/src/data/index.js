@@ -1,4 +1,7 @@
-import boots from '../images/icons/boots.png'
+import boot1 from '../images/boot1.jpg'
+import boot2 from '../images/boot2.jpg'
+import boot3 from '../images/boot3.jpg'
+import boot4 from '../images/boot4.jpg'
 
 export const sortValues = [
     { name: 'Featured', id: 0 },
@@ -29,42 +32,54 @@ export const bestForData = [
 export const bestSellersData = [
     {
         name: 'Nike Vomero 1',
-        price: 501,
-        image: boots,
-        options: ['Unisex', 'Sport Shoes', 'New Arrival'],
-        colors: '4 colors, complete set',
+        price: [
+            {oldPrice: 2879},
+            {newPrice: 899}
+        ],
+        image: boot1,
+        options: ['Sale', 'Suede', 'Comfort+'],
+        article: '243R8119',
         feedback: 98
     },
     {
         name: 'Nike Vomero 2',
-        price: 502,
-        image: boots,
-        options: ['Unisex', 'Sport Shoes', 'New Arrival'],
-        colors: '4 colors, complete set',
+        price: [
+            {oldPrice: 2879},
+            {newPrice: 899}
+        ],
+        image: boot2,
+        options: ['Sale', 'Suede', 'Comfort+'],
+        article: '243R8119',
         feedback: 85
     },
     {
         name: 'Nike Vomero 3',
-        price: 503,
-        image: boots,
-        options: ['Unisex', 'Sport Shoes', 'New Arrival'],
-        colors: '4 colors, complete set',
+        price: [
+            {oldPrice: 2879},
+            {newPrice: 899}
+        ],
+        image: boot3,
+        options: ['Sale', 'Suede', 'Comfort+'],
+        article: '243R8119',
         feedback: 73
     },
     {
         name: 'Nike Vomero 4',
-        price: 504,
-        image: boots,
-        options: ['Unisex', 'Sport Shoes', 'New Arrival'],
-        colors: '4 colors, complete set',
+        price: [
+            {oldPrice: 2879},
+            {newPrice: 899}
+        ],
+        image: boot4,
+        options: ['Sale', 'Suede', 'Comfort+'],
+        article: '243R8119',
         feedback: 99
     },
-    {
-        name: 'Nike Vomero 5',
-        price: 505,
-        image: boots,
-        options: ['Unisex', 'Sport Shoes', 'New Arrival'],
-        colors: '4 colors, complete set',
-        feedback: 111
-    },
+    // {
+    //     name: 'Nike Vomero 5',
+    //     price: 505,
+    //     image: boots,
+    //     options: ['Unisex', 'Sport Shoes', 'New Arrival'],
+    //     colors: '4 colors, complete set',
+    //     feedback: 111
+    // },
 ]

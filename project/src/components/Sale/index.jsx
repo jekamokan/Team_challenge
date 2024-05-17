@@ -21,7 +21,7 @@ const Sale = () => {
     return (
         <div className='sale'>
             <div className="sale__head">
-                <h2 className="sale__title">Sale</h2>
+                <h2 className="sale__title">Latest on sale</h2>
                 <Link className='sale__link'>View all</Link>
             </div>
             <div className="sale__body">

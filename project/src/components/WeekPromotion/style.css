@@ -1,0 +1,25 @@
+.promotion {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.promotion__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.promotion__title {
+  font-weight: 700;
+  color: #000;
+}
+.promotion__body {
+  display: flex;
+  justify-content: space-between;
+}
+.promotion__link {
+  color: var(--color-black-text);
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: -0.006em;
+}/*# sourceMappingURL=style.css.map */

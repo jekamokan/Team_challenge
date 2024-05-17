@@ -1,5 +1,6 @@
 @import './fonts/fonts.css';
 @import './roots/root.css';
+@import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');
 
 *{
   margin: 0;

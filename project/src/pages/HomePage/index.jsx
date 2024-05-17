@@ -5,6 +5,8 @@ import BestSellers from "../../components/BestSellers"
 import ForBoth from "../../components/ForBoth"
 import Sale from "../../components/Sale"
 import Form from "../../components/Form"
+import NewCollection from "../../components/NewCollection"
+import WeekPromotion from "../../components/WeekPromotion"
 
 
 
@@ -17,8 +19,10 @@ const HomePage = () => {
         <MainSlider />
       </div>
       <Container>
+        <NewCollection/>
         <BestSellers/>
         <ForBoth/>
+        <WeekPromotion/>
         <Sale/>
         <Form/>
       </Container>
