@@ -16,7 +16,7 @@
   width: 100%;
   height: 100%;
 }
-.forboth__link {
+.forboth__link, .forboth__categories-link {
   width: 100%;
   height: 100%;
   display: flex;
@@ -27,4 +27,52 @@
   padding: 24px;
   color: #1B1B1B;
   font-size: 32px;
+}
+.forboth__categories-link {
+  align-content: flex-start;
+}
+.forboth__man-categories, .forboth__woman-categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 100px;
+}
+.forboth__man-item, .forboth__woman-item {
+  height: 357px;
+}
+.forboth__man-item.t-shirts {
+  background: url("../../images/icons/T-shirts.jpg");
+}
+.forboth__man-item.trousers {
+  background: url("../../images/icons/Trousers.jpg");
+}
+.forboth__man-item.suits {
+  background: url("../../images/icons/Suits.jpg");
+}
+.forboth__man-item.outerwear {
+  background: url("../../images/icons/Outerwear.jpg");
+}
+.forboth__man-item.shoes {
+  background: url("../../images/icons/Shoes.jpg");
+}
+.forboth__man-item.accessories {
+  background: url("../../images/icons/Accessories.jpg");
+}
+.forboth__woman-item.t-shirts {
+  background: url("../../images/icons/wT-shirts.jpg");
+}
+.forboth__woman-item.trousers {
+  background: url("../../images/icons/wTrousers.jpg");
+}
+.forboth__woman-item.suits {
+  background: url("../../images/icons/wSuits.jpg");
+}
+.forboth__woman-item.outerwear {
+  background: url("../../images/icons/wOuterwear.jpg");
+}
+.forboth__woman-item.shoes {
+  background: url("../../images/icons/wShoes.jpg");
+}
+.forboth__woman-item.accessories {
+  background: url("../../images/icons/wAccessories.jpg");
 }/*# sourceMappingURL=style.css.map */

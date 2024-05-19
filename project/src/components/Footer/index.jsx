@@ -1,4 +1,5 @@
 import './style.css'
+import {  Link } from 'react-router-dom'
 import novaPost from '../../images/icons/nova-post.png'
 import meestPost from '../../images/icons/meest-post.jpg'
 import payU from '../../images/icons/payU.png'
@@ -8,6 +9,7 @@ import applePay from '../../images/icons/apple-pay.png'
 import Container from '../Container'
 
 const Footer = () => {
+    const toTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
     return (
         <footer className='footer'>
             <Container>
@@ -17,7 +19,10 @@ const Footer = () => {
                             <a className="footer__link" href="#">ASSISTANCE AND INFORMATION</a>
                         </li>
                         <li className="footer__item">
-                            <a className="footer__link" href="#">About Us</a>
+                            <Link 
+                            to={'/about'}
+                            onClick={()=> toTop()}
+                            >About Us</Link>
                         </li>
                         <li className="footer__item">
                             <a className="footer__link" href="#">Store rules</a>
