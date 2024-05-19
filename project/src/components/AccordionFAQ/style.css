@@ -47,6 +47,7 @@
 }
 .accordion-title{
     padding: 0 !important;
+    margin: 0 !important;
     min-height: 0 !important;
     font-size: 20px;
     color: #636363;
