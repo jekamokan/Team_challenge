@@ -7,70 +7,70 @@ import './style.css'
 const AccordionFAQ = () => {
     return (
         <div>
-            <Accordion>
+            <Accordion className='accordion-item'>
                 <AccordionSummary
-                    expandIcon={<AccordionFaqArrow/>}
+                    className='accordion-title'
+                    expandIcon={<AccordionFaqArrow />}
                     aria-controls="panel1-content"
                     id="panel1-header"
-                    sx={{fontSize: 20}}
                 >
-                    What are the delivery terms?
+                    <p className='accordion-titleText'>What are the delivery terms?</p>
                 </AccordionSummary>
                 <AccordionDetails>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                     malesuada lacus ex, sit amet blandit leo lobortis eget.
                 </AccordionDetails>
             </Accordion>
-            <Accordion>
+            <Accordion className='accordion-item'>
                 <AccordionSummary
+                    className='accordion-title'
                     expandIcon={<AccordionFaqArrow />}
                     aria-controls="panel2-content"
                     id="panel2-header"
-                    sx={{fontSize: 20}}
                 >
-                    How can I return or exchange an item?
+                    <p className='accordion-titleText'>How can I return or exchange an item?</p>
                 </AccordionSummary>
                 <AccordionDetails>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                     malesuada lacus ex, sit amet blandit leo lobortis eget.
                 </AccordionDetails>
             </Accordion>
-            <Accordion >
+            <Accordion className='accordion-item'>
                 <AccordionSummary
+                    className='accordion-title'
                     expandIcon={<AccordionFaqArrow />}
                     aria-controls="panel3-content"
                     id="panel3-header"
-                    sx={{fontSize: 20}}
                 >
-                    Can I cancel or modify my order?
+                    <p className='accordion-titleText'>Can I cancel or modify my order?</p>
                 </AccordionSummary>
                 <AccordionDetails>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                     malesuada lacus ex, sit amet blandit leo lobortis eget.
                 </AccordionDetails>
             </Accordion>
-            <Accordion >
+            <Accordion className='accordion-item'>
                 <AccordionSummary
+                    className='accordion-title'
                     expandIcon={<AccordionFaqArrow />}
                     aria-controls="panel4-content"
                     id="panel4-header"
-                    sx={{fontSize: 20}}
                 >
-                    Do you offer international shipping?
+                    <p className='accordion-titleText'>Do you offer international shipping?</p>
                 </AccordionSummary>
                 <AccordionDetails>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                     malesuada lacus ex, sit amet blandit leo lobortis eget.
                 </AccordionDetails>
             </Accordion>
-            <Accordion >
+            <Accordion className='accordion-item'>
                 <AccordionSummary
+                    className='accordion-title'
                     expandIcon={<AccordionFaqArrow />}
                     aria-controls="panel5-content"
                     id="panel5-header"
-                    sx={{fontSize: 20}}
                 >
-                    Can I track my order?
+                    <p className='accordion-titleText'>Can I track my order?</p>
                 </AccordionSummary>
                 <AccordionDetails>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
