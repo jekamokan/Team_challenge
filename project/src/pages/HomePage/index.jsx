@@ -7,6 +7,7 @@ import Sale from "../../components/Sale"
 import Form from "../../components/Form"
 import NewCollection from "../../components/NewCollection"
 import WeekPromotion from "../../components/WeekPromotion"
+import Ecological from "../../components/Ecological"
 
 
 
@@ -24,6 +25,7 @@ const HomePage = () => {
         <ForBoth/>
         <WeekPromotion/>
         <Sale/>
+        <Ecological/>
         <Form/>
       </Container>
     </div>

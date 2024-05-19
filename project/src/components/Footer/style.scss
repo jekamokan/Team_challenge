@@ -1,23 +1,39 @@
 .footer{
-    padding: 65px 0 20px 0;
-    background-color: #F0F0F0;
+ background: linear-gradient(#FEFEFE, #C8D1DD 26%, #112743);
+ padding-bottom: 335px;
+ &__wrapper{
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 258px;
+ }
+ &__list{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 60px;
-    &__social{
-        display: flex;
-        gap:30px;
-        align-items: center;
-    }
-    &__social-networks{
-        display: flex;
-        gap: 8px;
-    }
-    &__social-text{
+    gap: 16px;
+ }
+ &__item{
+    &:first-child{
         text-transform: uppercase;
         font-weight: 700;
-        color: var(--color-black);
-        font-size: 17px;
+        margin-bottom: 24px;
     }
+ }
+ &__item-meest{
+    margin-bottom: 8px;
+ }
+ &__item-img{
+    display: flex;
+    gap: 8.5px;
+ }
+ &__item-imgPay{
+        margin-top: -12px;
+ }
+ &__follow{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 1px;
+ }
 }

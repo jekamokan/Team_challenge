@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import testImg from '../../images/icons/test.png'
+import formImg from '../../images/icons/form-img.jpg'
 import './style.css'
 
 const Form = () => {
@@ -43,7 +43,7 @@ const Form = () => {
                 </form>
             </div>
             <div className="form__img">
-                <img src={testImg} alt="test" />
+                <img src={formImg} alt="test" />
             </div>
         </div>
     );

@@ -1,55 +1,93 @@
-import facebook from '../../images/icons/facebook.png'
-import instagram from '../../images/icons/instagram.png'
-import pinterest from '../../images/icons/pinterest.png'
-import tiktok from '../../images/icons/tiktok.png'
-import twitter from '../../images/icons/twitter.png'
-import youtube from '../../images/icons/youtube.png'
 import './style.css'
+import novaPost from '../../images/icons/nova-post.png'
+import meestPost from '../../images/icons/meest-post.jpg'
+import payU from '../../images/icons/payU.png'
+import mastercard from '../../images/icons/mastercard.png'
+import visa from '../../images/icons/visa.png'
+import applePay from '../../images/icons/apple-pay.png'
+import Container from '../Container'
 
 const Footer = () => {
     return (
         <footer className='footer'>
-            <div className='footer__info'>
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                </ul>
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                </ul>
-            </div>
-            <div className='footer__social'>
-                <p className="footer__social-text">Follow us</p>
-                <div className="footer__social-networks">
-                    <a className='footer__social-link' href="#">
-                        <img src={facebook} alt="facebook" />
-                    </a>
-                    <a className='footer__social-link' href="#">
-                        <img src={instagram} alt="instagram" />
-                    </a>
-                    <a className='footer__social-link' href="#">
-                        <img src={twitter} alt="twitter" />
-                    </a>
-                    <a className='footer__social-link' href="#">
-                        <img src={pinterest} alt="pinterest" />
-                    </a>
-                    <a className='footer__social-link' href="#">
-                        <img src={tiktok} alt="tiktok" />
-                    </a>
-                    <a className='footer__social-link' href="#">
-                        <img src={youtube} alt="youtube" />
-                    </a>
+            <Container>
+                <div className="footer__wrapper">
+                    <ul className="footer__list">
+                        <li className="footer__item">
+                            <a className="footer__link" href="#">ASSISTANCE AND INFORMATION</a>
+                        </li>
+                        <li className="footer__item">
+                            <a className="footer__link" href="#">About Us</a>
+                        </li>
+                        <li className="footer__item">
+                            <a className="footer__link" href="#">Store rules</a>
+                        </li>
+                        <li className="footer__item">
+                            <a className="footer__link" href="#">Conditions of return</a>
+                        </li>
+                        <li className="footer__item">
+                            <a className="footer__link" href="#">Claim</a>
+                        </li>
+                        <li className="footer__item">
+                            <a className="footer__link" href="#">Cooperation</a>
+                        </li>
+                        <li className="footer__item">
+                            <a className="footer__link" href="#">FAQ</a>
+                        </li>
+                        <li className="footer__item">
+                            <a className="footer__link" href="#">Contacts</a>
+                        </li>
+                        <li className="footer__item">
+                            <a className="footer__link" href="#">Corporate Social Responsibility</a>
+                        </li>
+                        <li className="footer__item">
+                            <a className="footer__link" href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                    <ul className="footer__list">
+                        <li className="footer__item">
+                            <a className="footer__link" href="#">DELIVERY</a>
+                        </li>
+                        <li className="footer__item">
+                            <a className="footer__link" href="#">Nova Poshta</a>
+                        </li>
+                        <li className="footer__item footer__item-meest">
+                            <a className="footer__link" href="#">Courier Meest POST</a>
+                        </li>
+                        <li className="footer__item-img">
+                            <a className="footer__link" href="#">
+                                <img className='footer__img-box' src={novaPost} alt="nova-poshta" />
+                            </a>
+                            <a className="footer__link" href="#">
+                                <img className='footer__img-box' src={meestPost} alt="meest-post" />
+                            </a>
+                        </li>
+                    </ul>
+                    <ul className="footer__list">
+                        <li className="footer__item">
+                            <a className="footer__link" href="#">PAYMENT</a>
+                        </li>
+                        <li className="footer__item-img">
+                            <a className="footer__link" href="#">
+                                <img className='footer__img-box' src={payU} alt="nova-poshta" />
+                            </a>
+                            <a className="footer__link" href="#">
+                                <img className='footer__img-box' src={mastercard} alt="nova-poshta" />
+                            </a>
+                        </li>
+                        <li className="footer__item-img footer__item-imgPay">
+                            <a className="footer__link" href="#">
+                                <img className='footer__img-box' src={visa} alt="nova-poshta" />
+                            </a>
+                            <a className="footer__link" href="#">
+                                <img className='footer__img-box' src={applePay} alt="nova-poshta" />
+                            </a>
+                        </li>
+                    </ul>
+
                 </div>
-            </div>
+                <p className="footer__follow">FOLLOW US</p>
+            </Container>
         </footer>
     )
 }

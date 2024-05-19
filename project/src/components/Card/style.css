@@ -65,12 +65,11 @@
 .card__bottom {
   display: flex;
   flex-direction: column;
-  gap: 8px;
 }
 .card__feedback {
   display: flex;
   align-items: center;
-  gap: 8px;
+  margin-bottom: 8px;
 }
 .card__bottom-name {
   display: flex;
