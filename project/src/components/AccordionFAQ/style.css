@@ -40,14 +40,13 @@
     border-bottom-right-radius: 0 !important;
     box-shadow: none !important;
     border-top: 2px solid #9D9D9D;
-    padding: 24px 0;
+    padding: 12px 0;
 }
 .accordion-item:last-of-type{
     border-bottom: 2px solid #9D9D9D;
 }
 .accordion-title{
     padding: 0 !important;
-    margin: 0 !important;
     min-height: 0 !important;
     font-size: 20px;
     color: #636363;
